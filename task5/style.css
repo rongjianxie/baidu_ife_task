@@ -1,0 +1,204 @@
+body{
+	background-color: #202020;
+	font-family:微软雅黑;
+	margin:0px 34px 0px 34px;
+}
+
+body div{
+	background-color: #DEDEDE;	
+}
+
+.head {
+	background-color: #333333;
+	width: inherit;
+	height:60px;
+	background-image: url(img/logo.gif);
+	background-position: 40px center;
+	background-repeat: no-repeat;
+}
+
+nav {
+	float: right;
+	margin: 
+}
+nav ul li{
+	float:left;
+	width: 80px;
+	font-size: 0.75em;
+	font-weight: 600;
+
+}
+
+nav ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+nav ul li:last-child a{
+	color:#A3A8AB;
+}
+
+.articles {
+	background-color: #DEDEDE;
+}
+
+.unit {
+	background-color:#fff;
+	margin: 20px 450px 20px 20px;
+	padding:22px;
+	box-shadow: 1px 1px 3px 1px #848484;
+}
+
+#article_4 {
+	float: right;
+	width: 365px;
+	margin: 0px 20px 0px 20px;
+}
+
+.title_1 {
+	font-weight: bold;
+	font-size:130%;
+	letter-spacing: 2px;
+}
+
+.title_2 {
+	font-weight: bold;
+	font-size:90%;
+	color:#686A76;
+}
+
+.title_3 {
+	font-weight: bold;
+	font-size:70%;
+	color:#686A76;
+}
+
+.text a {
+	color: #0B03E4;
+}
+
+.text_img {
+	max-width: 320px;
+	max-height:245px;
+	width: 100%;
+	height: 100%;
+}
+
+#article_2 ul li {
+	list-style: none;
+}
+
+figure {
+	max-width: 122px;
+	width:100%;
+	border:solid 1px #CBCBCB;
+	text-align: center;
+	display:inline-block;
+	margin:5px;
+	overflow: hidden;
+}
+
+figcaption {
+	margin:5px 0px 5px 0px;
+	text-align: center;
+	font-size: 0.7em;
+}
+
+figure img {
+	max-width:100px;
+	max-height:80px;
+	width: 100%;
+	height: 100%;
+	margin:5px 5px 5px 5px;
+}
+
+
+
+#article_3 table {
+	width: 100%;
+	border:1px solid #CBCBCB;
+	border-collapse: collapse;
+}
+
+#article_3 td {
+	border: 1px solid #CBCBCB;
+	height:25px;
+	padding: 0px 0px 0px 4px;
+}
+
+#article_3 thead tr td {
+	background-color: #333333;
+	color:white;
+	font-size: 0.8em;
+}
+
+#article_3>p{
+	margin:0px;
+}
+
+#article_3 tbody {
+	font-size: 0.7em;
+}
+
+#article_3 tbody a{
+	color: #580498;
+}
+
+#article_3 tfoot {
+	background-color:#CCCCCC;
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
+#article_4>p:first-child {
+	border-left:3px solid #CCCCCC;
+	padding-left: 10px;
+	height: 40px;
+	font-weight: 900;	
+	line-height:40px; 
+}
+
+form table {
+	margin-left:40px;
+	border-spacing: 5px;
+	word-break: keep-all; 
+}
+form td:first-child{
+	float: right;
+	padding-right: 8px;
+}
+
+.note {
+	color:#959595;
+	margin-left: 30%;
+	font-size: 0.8em;
+}
+
+input[value="确认提交"] {
+	text-align: center;
+	background-color: #3355D0;
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	color:white;
+	border-radius: 10px;
+	border:0px;
+}
+
+textarea {
+	width: 100%;
+}
+
+footer {
+	font-size: 0.8em;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	background-color: black;
+	color:white;
+}
+
+footer a {
+	color:white;
+	text-decoration: none;
+}
