@@ -1,0 +1,439 @@
+*{
+	font-family: 黑体;
+}
+
+html {
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	height: 100%;
+}
+
+header {
+	height: 56px;
+	width: 100%;
+	background-color: #228ABF;
+}
+
+.header-1-1 {
+	display: inline-block;
+	background-color: white;
+	width: 38px;
+	height: 38px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.header-1-1 span{
+	display: block;
+	position: relative;
+	right:-19px;
+	bottom: -19px;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border-left:4px solid #228ABF; 
+	border-top:4px solid #228ABF; 
+}
+
+.header-1-2 {
+	float: right;
+	margin-top: 15px;
+	margin-right:56px;
+}
+
+.header-1-2 span {
+	display: inline-block;
+	width: 313px;
+	height: 28px;
+	background-color: white;
+	border-radius: 14px;
+}
+
+.header-1-2 span a {
+	display: inline-block;
+	background: url(../img/header-1.gif) no-repeat ;
+	background-position: 50%;
+	height: 28px;
+	width: 19px;
+	margin-left: 17px;
+}
+
+.header-1-2 span input {
+	box-sizing:border-box;
+	display: inline-block;
+	border:0px;
+	width: 256px;
+	height: 28px;
+	vertical-align: top;
+}
+
+.header-1-2 a {
+	text-decoration: none;
+	color:white;
+	font-size: 12px;
+	width: 64px;
+	height: 28px;
+	display: inline-block;
+	line-height: 28px;
+	vertical-align: text-bottom;
+	text-align: center;
+	background: url(../img/login.gif) no-repeat;
+	background-position: 0% 10%;
+	margin-left: 17px;
+}
+
+.sidebar {
+	float: left;
+	width: 260px;
+	background-color: #2B2E3D;
+	height: calc(100% - 56px);
+}
+
+.main {
+	margin-left: 260px;
+}
+
+.profile {
+	height: 150px;
+	text-align: center;
+}
+
+.faviconName {
+	margin: 18px 0px 18px 0px;
+}
+
+.faviconName a {
+	display: inline-block;
+	box-sizing:border-box;
+	width: 58px;
+	height: 58px;
+	border: 1px solid white;
+	border-radius: 29px;
+}
+
+.faviconName a span {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	border-radius: 23px;
+	background-color: white;
+	position: relative;
+	top: 5px;
+}
+
+.faviconName>span {
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	position: relative;
+	top: -10px;
+	margin-left: 18px ;
+}
+
+.collectAndfans div {
+	display: inline-block;
+	margin: 0px 30px 0px 30px;
+}
+
+.collectAndfans div p {
+	font-size: 16px;
+	color: #68778A;
+	margin:0;
+}
+
+.collectAndfans div span {
+	font-family: 宋体;
+	font-size: 12px;
+	color: #68778A;
+	margin:0;
+}
+
+.collectAndfans > span {
+	display: inline-block;
+	height: 28px;
+	width: 1px;
+	background-color: #68778A;
+}
+
+
+.element:hover {
+	background-color: #383E4E;
+}
+
+.element {
+	padding: 15px 0px 10px 0px;
+}
+
+.element > div {	
+	margin:0px 0px 0px 45px;
+	color: #68778A;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+.element > div:hover {
+	color:white;
+}
+
+#collect {
+	background:0% 50% url(../img/side8.gif) no-repeat;
+}
+
+#share {
+	background:0% 50% url(../img/side10.gif) no-repeat;
+}
+
+#mapStorage {
+	background:0% 50% url(../img/side8.gif) no-repeat;
+}
+
+#growthRecord {
+	background:0% 50% url(../img/side8.gif) no-repeat;
+}
+
+#account {
+	background:0% 50% url(../img/side9.gif) no-repeat;
+}
+
+#personalStatement {
+	background:0% 0% url(../img/side8.gif) no-repeat;
+}
+
+#personalStatement > a{
+	display: block;
+	text-decoration: none;
+	color: #68778A;
+	margin: 15px 0px 15px 0px;
+}
+
+.file {
+	background: url(../img/side5.gif) no-repeat;
+}
+
+.file:hover {
+	background: url(../img/side7.gif) no-repeat;
+
+}
+
+.file span{
+	background: url(../img/side4.gif) no-repeat;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+.file span:hover{
+	color: white;
+	background: url(../img/side6.gif) no-repeat;
+}
+
+#personalStatement .document {
+	background: url(../img/side1.gif) no-repeat;
+	margin-left: 20px;
+	padding-left: 20px;
+	color: #68778A;
+}
+
+#personalStatement .document:hover {
+	background: url(../img/side3.gif) no-repeat;
+	color: white;
+}
+
+.main {
+	position: relative;
+	height: calc( 100% - 56px);
+	overflow: scroll;
+}
+
+.documentAddress {
+	height: 30px;
+	background-color: white;
+}
+
+.documentAddress span{
+	color: #aaa;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+
+.documentAddress span:hover {
+	cursor: pointer;
+	color: #2189bf;
+}
+
+.documentAddress span:nth-child(1) {
+	margin-left: 30px;
+}
+
+.documentAddress span:last-child {
+	color: #2189bf;
+}
+
+.documentContent {
+	background-color: #EDEDED;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.documentContent > div {
+	margin-left: 60px;
+	margin-right: 60px;
+	border: 1px solid #dcdedf;
+}
+
+.query {
+	background-color: white;
+	height: 86px;
+}
+
+.query > div {
+	float: left;
+	height: 54px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.query > div span {
+	font-size: 12px;
+	color: #aaaaaa;
+}
+
+.query > div select {
+	height: 24px;
+}
+
+.query > div p {
+	margin: 0px;
+}
+
+.query > div:first-child {
+	margin-left: 32px;
+}
+
+.query > div:first-child  select {
+	margin-left: 15px;
+	width: 70px;
+}
+
+.query > div:nth-child(2)  {
+	margin-left: 40px;
+	width: 200px;
+	background:url(../img/query1.png) no-repeat;
+	background-position: 100% 40%;
+}
+
+
+.query > div:nth-child(2)  select {
+	margin-left: 15px;
+	width: 120px;
+}
+
+.query > div:nth-child(2) > span {
+	text-align: left;
+	display: block;
+
+}
+.query > div:nth-child(2) span:first-child {
+	margin-bottom: 5px;
+}
+
+.query > div:nth-child(3)  {
+	margin-left: 25px;
+}
+
+.query > div:nth-child(3) p {
+	text-align: left;
+}
+
+.query > div:nth-child(3) select {
+	margin-left: 15px;
+}
+
+.query > div:nth-child(3) p:first-child {
+	margin-bottom: 5px;
+}
+
+.query > div:nth-child(3) input {
+	margin-left: 15px;
+	box-sizing:border-box;
+	width: 120px;
+	height: 24px;
+	padding-left: 5px;
+}
+ 
+.query > div:nth-child(3) select {
+	width: 70px;
+}
+
+
+.query > div:nth-child(3) p:last-child > select:last-child {
+	width: 120px;
+}
+
+
+.query > div:nth-child(4)  {
+	margin-left: 32px;
+}
+
+.search {
+	border: 0px;
+	background-color: #3A8BC2;
+	color: white;
+	font-size: 12px;
+	width: 52px;
+	height: 25px;
+}
+
+.query > div:nth-child(4) button {
+	position: relative;
+	top: 25%;
+}
+
+.realtimePrice {
+	background-color: #EEEEEE;
+	height: 66px;
+	border:0px;
+	margin-top: 10px;
+}
+
+.realtimePrice a {
+	box-sizing:border-box;
+	float: left;
+	background-color: white;
+	border:1px 0px 0px 1px solid #dcdedf; 
+	height: 66px;
+	width: calc( ( 100% - 238px )  / 6);
+	margin-right: 6px;
+	text-decoration: none;
+}
+
+#leftTime {
+	width: 30px;
+}
+
+#leftTime span{
+	display: inline-block;
+	background: 50% 50% url(../img/timeprice1.png) no-repeat;
+	transform: scaleX(-1);
+	width: 30px;
+	height: inherit;
+}
+
+#rightTime {
+	width: 30px;
+}
+
+#rightTime span{
+	display: inline-block;
+	background: 50% 50% url(../img/timeprice1.png) no-repeat;
+	width: 30px;
+	height: inherit;
+}
+
+#historySearch {
+	width: 130px;
+	margin-right: 0px;
+}
