@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			display:inline-block;
+		}
+		
+		body{
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+		.father {
+			width: 500px;
+			height: 500px;
+			background-color: #aaa;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.son1 {
+			width: 200px;
+			height: 200px;
+			background-color: #bbb;
+			position: relative;
+		}
+		.son2 {
+			width: 200px;
+			height: 200px;
+			background-color: #ccc;
+			position: absolute;
+		}
+		.grandson1 {
+			width: 100px;
+			height: 100px;
+			background-color: #ddd;
+			position: relative;
+		}
+		.grandson2 {
+			width: 100px;
+			height: 100px;
+			background-color: #eee;
+			position: absolute;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son1">
+			<div class="grandson1"></div>
+		</div>
+		<div class="son2">
+			<div class="grandson2"></div>
+		</div>		
+	</div>
+</body>
+</html>

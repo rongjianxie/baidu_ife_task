@@ -4,6 +4,7 @@
 
 html {
 	height: 100%;
+	min-width: 1360px;
 }
 
 body{
@@ -392,7 +393,7 @@ header {
 	top: 25%;
 }
 
-.realtimePrice {
+ div .realtimePrice {
 	background-color: #EEEEEE;
 	height: 66px;
 	border:0px;
@@ -403,37 +404,523 @@ header {
 	box-sizing:border-box;
 	float: left;
 	background-color: white;
-	border:1px 0px 0px 1px solid #dcdedf; 
+	border: solid #dcdedf; 
+	border-width: 2px 0px 0px 2px;
 	height: 66px;
-	width: calc( ( 100% - 238px )  / 6);
+	width: calc( ( 100% - 258px )  / 6);
 	margin-right: 6px;
 	text-decoration: none;
 }
 
 #leftTime {
-	width: 30px;
+	width: 40px;
 }
 
 #leftTime span{
 	display: inline-block;
 	background: 50% 50% url(../img/timeprice1.png) no-repeat;
 	transform: scaleX(-1);
-	width: 30px;
+	width: 40px;
 	height: inherit;
 }
 
+#leftTime:hover {
+	background-color: #c6c6c6;
+}
+
 #rightTime {
-	width: 30px;
+	width: 40px;
+}
+
+#rightTime:hover {
+	background-color: #c6c6c6;
 }
 
 #rightTime span{
 	display: inline-block;
 	background: 50% 50% url(../img/timeprice1.png) no-repeat;
-	width: 30px;
+	width: 40px;
 	height: inherit;
 }
 
 #historySearch {
 	width: 130px;
 	margin-right: 0px;
+}
+
+.unit_price {
+	padding-top: 12px;
+}
+
+.unit_price:hover {
+	border-top: 4px solid #4388C9;
+}
+
+.unit_price span:first-child{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color:black;
+}
+
+.unit_price span:nth-child(3) {
+	font-size: 120%;
+	color: #B3B3B3;
+}
+
+.unit_price span:last-child {
+	font-family: 微软雅黑;
+	font-size: 21px;
+	color: #ec6500;
+	margin: 0px;
+	line-height: 12px;
+}
+
+#historySearch span{
+	display: inline-block;
+	background: url(../img/timeprice2.png) no-repeat;
+	background-position: 18px 50%;
+	padding-left: 15px;
+	color: #535353;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	line-height: 63px;
+	height: 63px;
+	width: inherit;
+}
+
+div .statastics {
+	height: 92px;
+	border: none;
+	font-family: 微软雅黑;
+	margin-top: 16px;
+	text-align: left;
+}
+
+.statastics > p {
+	margin: 0px 0px 3px 0px;
+	color: black;
+	font-size: 12px;
+}
+
+.statastics ul {
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.statastics ul li {
+	background-color: white;
+	display: inline-block;
+	list-style: none;
+	border-left: 3px solid;
+	width: calc( ( 100% - 102px ) / 4 );
+	height: 72px;
+}
+
+.statastics ul li div {
+	display: inline-block;
+}
+
+.statastics ul li:nth-child(-n+3)
+{
+	margin-right: 30px;
+}
+
+.statastics ul li div p {
+	font-size: 12px;
+	margin: 15px 0px 6px 10px;
+}
+
+.statastics ul li div span {
+	font-size: 10px;
+	color: #aaa;
+	margin-left: 10px;
+}
+
+.statastics ul li b {
+	display: inline-block;
+	position: relative;
+	left: 78px;
+	top: 8px;
+	width: 60px;
+	height: 45px;
+	
+}
+
+.statastics ul li:nth-child(1){
+	border-color:#43B29F;
+}
+
+.statastics ul li:nth-child(1) b{
+	background-color: #43B29F;
+}
+
+
+.statastics ul li:nth-child(2){
+	border-color:#398AC1;
+}
+
+.statastics ul li:nth-child(2) b{
+	background-color: #398AC1;
+}
+
+.statastics ul li:nth-child(3){
+	border-color:#CF4B36;
+}
+
+.statastics ul li:nth-child(3) b{
+	background-color: #CF4B36;
+}
+
+.statastics ul li:nth-child(4){
+	border-color:#e2cd47;
+}
+
+.statastics ul li:nth-child(4) b{
+	background-color: #e2cd47;
+}
+
+.unit {
+	height: 360px;
+	display: inline-block;
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid #d0d2d5;
+	vertical-align: top;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.unit > p {
+	margin: 0px;
+	padding-left: 21px;
+	line-height: 40px;
+	height: 40px;
+	background-color: #F4F5F7;
+	text-align: left;
+	font-size: 12px;
+	color: #aaaaaa;
+	border-bottom: 1px solid #d0d2d5;
+}
+
+div .otherInformation , div .projectDetails {
+	border: 0px;
+}
+
+.materials {
+	margin-right: 10px;
+}
+
+.calendar {
+	margin-right: 10px;
+}
+
+.materials , .rankingList {
+	width: calc( 60% - 10px );
+}
+
+.projectDescription , .calendar {
+	width: calc( 40% - 10px );
+}
+
+.tab {
+	padding: 12px 36px 23px;
+}
+
+.tab-top , .tab-bottom {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tab-top {
+	text-align: left;
+}
+.tab-top li{
+	box-sizing:border-box;
+	display: inline-block;
+	list-style: none;
+	height: 28px;
+	width: 84px;
+	background-color: #EDECF1;
+	border-radius: 3px 3px 0px 0px;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	line-height: 28px;
+	cursor: pointer;
+	border: 1px solid #EDECF1;
+	text-align: center;
+	border-bottom-color:#d0d2d5; 
+}
+
+.tab-top li:first-child {
+	background-color: white;
+	border: 1px solid #d0d2d5;
+	border-bottom-color: white;
+}
+
+.tab-bottom {
+	padding: 3%;
+	border: 1px solid #d0d2d5;
+	list-style: none;
+	margin-top: -1px;
+}
+
+.tab-bottom td {
+	height: 30px;
+	border: 1px solid #cdcacd;
+	font-family: 宋体;
+	font-size: 12px;
+}
+
+.tab-bottom table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.box{
+	padding: 18px 36px 38px;
+	text-align: left;
+}
+
+.box h3{
+	margin: 0px;
+	padding: 0px;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #c3c2c2;
+}
+
+.box p {
+	margin: 0px;
+	padding: 0px;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: margin: 0px;
+	padding: 0px;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #535353;
+}
+
+.box ol {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border: solid #d0d2d5;
+	border-width: 1px 0px 1px;
+	text-align: left;
+}
+
+.box ol li {
+	padding: 6px 0px 0px 0px;
+	height: 44px;
+	display: inline-block;
+}
+
+.box ol li:first-child{
+	width: 95px;
+	height: 44px;
+	border-right:1px solid  #d0d2d5;
+}
+
+.box-down {
+	height: 146px;
+	border-bottom: 1px solid #d0d2d5;
+}
+
+.box-bottom {
+	padding-top: 5px;
+}
+
+.box-bottom input {
+	margin-top:6px;
+	padding: 0px;
+	opacity: 0.3;
+}
+
+.box-bottom span {
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #c3c2c2;
+}
+
+.box-bottom button {
+	float: right;
+	border: 0px;
+	background-color: #3A8BC2;
+	color: white;
+	font-size: 12px;
+	width: 52px;
+	height: 25px;
+}
+
+.calendar-box {
+	padding: 10px 24px 20px;
+}
+
+.cal-inner-box {
+	width: 100%;
+	margin: 0px;
+	padding:0px;
+}
+
+.cal-inner-box  select{
+	height: 22px;
+	font-size: 12px;
+	vertical-align: text-top;
+	margin-right: 5px;
+}
+
+.cal-inner-box a {
+	width: 22%;
+	display: inline-block;
+	height: 20px;
+	text-decoration: none;
+	font-size: 12px;
+	border: 1px solid #7A7A7A;
+	vertical-align: text-top;
+	color: black;
+	line-height: 20px;
+	padding: 0px 3px ;
+	text-align: center;
+}
+
+
+.cal-inner-box  select:nth-child(1){
+	width: 22%;
+}
+
+
+.cal-inner-box  select:nth-child(2){
+	width: 28%;
+	padding-left: 40px;
+}
+
+
+.cal-inner-box  select:nth-child(1){
+	width: 20%;
+}
+
+
+
+.calendar-box li:nth-child(2) select{
+	width: 84px;
+	padding-left: 20px;
+}
+
+
+.calendar-box li:nth-child(3) select{
+	width: 74px;
+}
+
+
+.calendar-box li:nth-child(4) a{
+	width: 64px;
+}
+
+.calendar-box table {
+	margin: 10px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	border-top: 1px solid #a9cfec;
+}
+
+.calendar-box table thead td {
+	box-sizing:border-box;
+	font-size: 12px;
+	height: 30px;
+	width: 40px; 
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.calendar-box table tbody td {
+	box-sizing:border-box;
+	height: 46px;
+	width: 40px;
+	font-size: 12px;
+}
+
+.calendar-box table tbody div{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0px 0px 0px 4px ;
+}
+.calendar-box table tbody td p{
+	margin: 5px 0px 0px;
+	padding: 0px;
+}
+
+.calendar-box .spacial div{
+	border: 1px solid #f5c62b;
+}
+
+.calendar-box table tbody tr td:nth-child(6) p,.calendar-box table tbody tr td:nth-child(7) p, .calendar-box .holiday{
+	color: #d14c50;
+}
+
+.car-ranking {
+	padding: 20px 40px 20px;
+}
+
+.car-ranking table {
+	border-collapse:collapse;
+	width: 100%;
+	border: solid  #c9c7c7;
+	border-width: 1px 0px 0px 1px;
+}
+
+.car-ranking table td {
+	box-sizing:border-box;
+	height: 26px;
+	border: 1px solid #cdcaca;
+}
+
+.car-ranking table thead td {
+	font-weight: 500;
+	font-size: 13px;
+	color: black;
+}
+
+.car-ranking table tbody td {
+	font-size: 12px;
+	color: #323333;
+}
+
+.car-ranking table tbody td:nth-child(1){
+	width: 15%;
+}
+.car-ranking table tbody td:nth-child(2) {
+	width: 20%;
+}
+
+
+.car-ranking table td:nth-child(3) {
+	padding-left: 20px;
+	text-align: left;
+}
+
+.car-ranking table tbody td:nth-child(3) b {
+	display: inline-block;
+	font-weight: 400;
+	width: 60px;
+	text-align: center;
+}
+
+.car-ranking table tbody td:nth-child(3) > span {
+	position: relative;
+	display: inline-block;
+	min-width: 180px;
+	height: 4px;
+	margin:0px 20px 0px;
+	background-color: #dcdcdc;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.car-ranking table tbody td:nth-child(3) > span > span {
+	position: absolute;
+	display: inline-block;
+	min-width: 180px;
+	height: 4px;
+	z-index: 2;
 }
